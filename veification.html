@@ -1,0 +1,22 @@
+<head>
+ <title>Verification Report</title
+</head>
+<body>
+
+  <h1>Verification Report</h1>
+{{> addPost}}
+</body>
+
+
+<template name="addPost">
+        <button class="clickable">ANY ISSUES</button> 
+        
+
+  {{#if showForm}}
+        <p>If Issues, Reject With Comments</p>
+<textarea class="t1" rows="5" cols="50" placeholder="Enter Issues or Comments"></textarea>
+       
+        {{else}}
+<button class="verify">VERIFIED</button>
+  {{/if}}
+</template>
